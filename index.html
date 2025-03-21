@@ -1,7 +1,101 @@
 <!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Dev Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script>
+        function toggleDropdown(id) {
+            const content = document.getElementById(id);
+            content.classList.toggle('hidden');
+        }
+    </script>
+</head>
+
+<body class="bg-gray-900 text-white font-sans">
+    <div class="container mx-auto p-6">
+        <h1 class="text-4xl font-bold text-center mb-8">Game Developer Portfolio</h1>
+
+        <div class="space-y-4">
+            <!-- Unity Section -->
+            <div class="bg-gray-800 rounded-xl p-4 shadow-lg">
+                <button onclick="toggleDropdown('unityContent')"
+                    class="w-full text-left text-2xl font-semibold flex justify-between items-center">
+                    Unity Projects
+                    <span>▼</span>
+                </button>
+                <div id="unityContent" class="hidden mt-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <!-- Add multiple Unity videos here -->
+                    <div class="aspect-w-16 aspect-h-9">
+                        <iframe src="https://github.com/user-attachments/assets/7a74882e-d533-4418-bdc0-9b578b86e108"
+                            frameborder="0" allowfullscreen class="w-full h-64"></iframe>
+                    </div>
+                    <div class="aspect-w-16 aspect-h-9">
+                        <iframe src="https://github.com/user-attachments/assets/7a74882e-d533-4418-bdc0-9b578b86e108"
+                            frameborder="0" allowfullscreen class="w-full h-64"></iframe>
+                    </div>
+                    <div class="aspect-w-16 aspect-h-9">
+                        <iframe src="https://github.com/user-attachments/assets/7a74882e-d533-4418-bdc0-9b578b86e108"
+                            frameborder="0" allowfullscreen class="w-full h-64"></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Unreal Engine Section -->
+            <div class="bg-gray-800 rounded-xl p-4 shadow-lg">
+                <button onclick="toggleDropdown('unrealContent')"
+                    class="w-full text-left text-2xl font-semibold flex justify-between items-center">
+                    Unreal Engine Projects
+                    <span>▼</span>
+                </button>
+                <div id="unrealContent" class="hidden mt-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <!-- Add multiple Unreal Engine videos here -->
+                    <div class="aspect-w-16 aspect-h-9">
+                        <iframe src="https://www.youtube.com/embed/CD25i4G8jIc" frameborder="0" allowfullscreen
+                            class="w-full h-64"></iframe>
+                    </div>
+                    <div class="aspect-w-16 aspect-h-9">
+                        <iframe src="https://www.youtube.com/embed/CD25i4G8jIc" frameborder="0" allowfullscreen
+                            class="w-full h-64"></iframe>
+                    </div>
+                    <div class="aspect-w-16 aspect-h-9">
+                        <iframe src="https://www.youtube.com/embed/CD25i4G8jIc" frameborder="0" allowfullscreen
+                            class="w-full h-64"></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Other Engines Section -->
+            <div class="bg-gray-800 rounded-xl p-4 shadow-lg">
+                <button onclick="toggleDropdown('otherContent')"
+                    class="w-full text-left text-2xl font-semibold flex justify-between items-center">
+                    Other Engines / Tools
+                    <span>▼</span>
+                </button>
+                <div id="otherContent" class="hidden mt-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <!-- Add multiple videos for other engines or tools -->
+                    <div class="aspect-w-16 aspect-h-9">
+                        <iframe src="https://www.youtube.com/embed/your_other_video_id_1" frameborder="0"
+                            allowfullscreen class="w-full h-64"></iframe>
+                    </div>
+                    <div class="aspect-w-16 aspect-h-9">
+                        <iframe src="https://www.youtube.com/embed/your_other_video_id_2" frameborder="0"
+                            allowfullscreen class="w-full h-64"></iframe>
+                    </div>
+                    <div class="aspect-w-16 aspect-h-9">
+                        <iframe src="https://www.youtube.com/embed/your_other_video_id_3" frameborder="0"
+                            allowfullscreen class="w-full h-64"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="mt-12 text-center text-gray-400">
+            © 2025 Your Name | Game Developer Portfolio
+        </footer>
+    </div>
 </body>
+
 </html>
