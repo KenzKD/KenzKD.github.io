@@ -19,6 +19,7 @@
                         'body': '#ffffff', // white
                         'icon': '#8ed0fa', // green
                         'icon-hover': '#ea580c', // orange
+                        'end-hover': '#ff0000',
                     },
                     fontFamily: {
                         'jetbrains': ['JetbrainsMonoNerdFont', 'monospace'],
@@ -484,8 +485,50 @@
         </div>
 
     </div>
-    <footer class="mt-12 text-center text-gray-400">
-        TODO : Copy contacts and Go to top
+    <footer class="mt-12 text-center text-top-color font-semibold">
+        <a href="#" class="cursor-pointer hover:text-end-hover"
+            onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">↑ Go Back Up ↑</a>
+        <div class="flex justify-center items-center gap-6 my-6">
+            <a class="hover:text-end-hover" aria-label="LinkedIn" href="https://www.linkedin.com/in/kenzelkd/"
+                target="_blank">
+                <svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="h-6">
+                    <title>LinkedIn</title>
+                    <path fill="currentColor"
+                        d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
+                    </path>
+                </svg>
+            </a>
+            <a class="hover:text-end-hover" aria-label="Email" href="mailto:kenzelkdsouza@gmail.com" target="_blank">
+                <svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-6">
+                    <title>Email</title>
+                    <path fill="currentColor"
+                        d="m16.484 11.976l6.151-5.344v10.627zm-7.926.905l2.16 1.875c.339.288.781.462 1.264.462h.017h-.001h.014c.484 0 .926-.175 1.269-.465l-.003.002l2.16-1.875l6.566 5.639H1.995zM1.986 5.365h20.03l-9.621 8.356a.6.6 0 0 1-.38.132h-.014h.001h-.014a.6.6 0 0 1-.381-.133l.001.001zm-.621 1.266l6.15 5.344l-6.15 5.28zm21.6-2.441c-.24-.12-.522-.19-.821-.19H1.859a1.9 1.9 0 0 0-.835.197l.011-.005A1.86 1.86 0 0 0 0 5.855v12.172a1.86 1.86 0 0 0 1.858 1.858h20.283a1.86 1.86 0 0 0 1.858-1.858V5.855c0-.727-.419-1.357-1.029-1.66l-.011-.005z" />
+                </svg>
+            </a>
+            <a class="hover:text-end-hover" aria-label="YouTube" href="https://www.youtube.com/@KenzelKD"
+                target="_blank">
+                <svg role="img" xmlns="http://www.w3.org/2000/svg" width="1.42em" height="1em" viewBox="0 0 34 24"
+                    class="h-6">
+                    <title>YouTube</title>
+                    <path fill="currentColor"
+                        d="m13.544 16.419l9.216-4.762l-9.216-4.818zM17.068 0q3.2 0 6.181.086t4.371.181l1.39.08q.019 0 .32.029c.167.013.317.033.465.061l-.026-.004q.134.029.448.086c.205.035.388.088.561.158L30.76.671q.229.095.534.248c.225.114.419.238.599.377l-.008-.006c.203.158.383.323.549.502l.003.003q.154.161.288.342l.007.01c.202.318.388.686.537 1.071l.015.044c.24.559.417 1.207.501 1.885l.004.035q.152 1.219.24 2.6t.105 2.16v3.352l.001.263c0 1.853-.125 3.678-.367 5.465l.023-.208a7.6 7.6 0 0 1-.498 1.946l.018-.051a4.8 4.8 0 0 1-.62 1.186l.01-.015l-.266.32a4.5 4.5 0 0 1-.542.497l-.01.008a3 3 0 0 1-.571.353l-.019.008q-.305.143-.534.24a2.6 2.6 0 0 1-.527.15l-.016.002q-.314.057-.457.086t-.438.057t-.314.029q-4.775.372-11.937.372q-3.943-.038-6.848-.124t-3.819-.143l-.934-.08l-.686-.08a9 9 0 0 1-1.102-.204l.062.013a6 6 0 0 1-1.003-.415l.032.015a3.8 3.8 0 0 1-1.075-.78l-.001-.001a4 4 0 0 1-.288-.342l-.007-.01a6 6 0 0 1-.537-1.071l-.015-.044a7 7 0 0 1-.501-1.885l-.004-.035q-.152-1.219-.24-2.6t-.105-2.16v-3.352l-.001-.263c0-1.853.125-3.678.367-5.465l-.023.208A7.6 7.6 0 0 1 .84 3.238l-.018.051c.162-.447.368-.834.62-1.186l-.01.015l.266-.32q.253-.272.542-.497l.01-.008c.172-.134.365-.257.57-.362l.021-.01q.305-.152.534-.248a2.6 2.6 0 0 1 .527-.15l.016-.002q.314-.057.448-.086c.121-.024.271-.044.424-.056l.015-.001q.305-.029.32-.029q4.783-.35 11.946-.35z" />
+                </svg>
+            </a>
+            <a class="hover:text-end-hover" aria-label="Twitch" href="https://www.twitch.tv/kenzelkd" target="_blank">
+                <svg role="img" viewBox="0 0 24 24" class="h-6" xmlns="http://www.w3.org/2000/svg">
+                    <title>Twitch</title>
+                    <path fill="currentColor"
+                        d="M11.571 4.714h1.715v5.143H11.57zm4.715 0H18v5.143h-1.714zM6 0L1.714 4.286v15.428h5.143V24l4.286-4.286h3.428L22.286 12V0zm14.571 11.143l-3.428 3.428h-3.429l-3 3v-3H6.857V1.714h13.714Z" />
+                </svg>
+            </a>
+            <a class="hover:text-end-hover" aria-label="Phone" href="tel:+971507649825" target="_blank">
+                <svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-5">
+                    <title>Phone</title>
+                    <path fill="currentColor"
+                        d="M13.839 13.84c-2.372 2.378-5.12 4.648-6.209 3.56c-1.557-1.56-2.517-2.913-5.951-.155s-.796 4.598.712 6.106c1.74 1.74 8.226.091 14.64-6.32s8.06-12.898 6.32-14.64c-1.512-1.505-3.347-4.139-6.105-.711s-1.403 4.39.153 5.946c1.088 1.094-1.182 3.841-3.56 6.214" />
+                </svg>
+            </a>
+        </div>
     </footer>
 </div>
 
