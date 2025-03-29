@@ -39,15 +39,15 @@
     <div class="bg-page border-1 shadow-lg shadow-top-color rounded-lg">
 
         <!-- Top Content -->
-        <div class="flex rounded-t-lg bg-top-color sm:px-2 w-full">
+        <div class="flex rounded-t-lg bg-top-color items-center w-full grid grid-cols-3">
 
             <!-- Profile Photo -->
-            <div class="h-0 w-0 overflow-hidden sm:rounded-full top-2 left-5 relative flex-shrink-0 sm:h-40 sm:w-40">
-                <img src="Profile Picture v2(Small).jpg" />
+            <div class="flex justify-center">
+                <img class="w-0 h-0 rounded-full sm:w-40 sm:h-40" src="Profile Picture v2(Small).jpg" />
             </div>
 
             <!-- Title -->
-            <div class="w-full text-center pl-5 mt-10 text-start">
+            <div class="w-full text-center pl-5 mt-10 text-start col-span-3 sm:col-span-2">
                 <p class="font-extrabold text-center text-heading text-4xl">
                     Kenzel K. Dsouza
                 </p>
@@ -104,8 +104,8 @@
         <div class="p-5">
 
             <!-- Side Content -->
-            <div class="flex flex-col sm:flex-row">
-                <div class="flex flex-col mr-5 sm:w-1/3">
+            <div class="flex flex-col md:flex-row">
+                <div class="flex flex-col mr-5 md:w-1/3">
 
                     <!-- About me -->
                     <div class="py-3 order-1">
@@ -116,11 +116,11 @@
                     </div>
 
                     <!-- Skills -->
-                    <div class="py-3 order-2">
+                    <div class="py-3 order-3">
                         <h2 class="text-lg font-bold text-top-color">Skills</h2>
                         <div class="border-2 w-20 border-top-color my-3"></div>
 
-                        <div class="flex grid grid-cols-1 xl:grid-cols-2">
+                        <div class="flex grid grid-cols-2 md:grid-cols-1 xl:grid-cols-2">
 
                             <!-- Unity Skill -->
                             <a class="hover:text-icon-hover" href="https://www.youtube.com/@KenzelKD" target="_blank">
@@ -215,7 +215,7 @@
                     </div>
 
                     <!-- Education -->
-                    <div class="py-3 order-3">
+                    <div class="py-3 order-4">
                         <h2 class="text-lg font-bold text-top-color">Education</h2>
                         <div class="border-2 w-20 border-top-color my-3"></div>
 
@@ -249,14 +249,14 @@
                 </div>
 
                 <!-- Main Content -->
-                <div class="flex flex-col sm:w-2/3 order-first sm:order-none">
+                <div class="flex flex-col order-first md:w-2/3 md:order-none">
 
                     <!-- Experience -->
                     <div class="py-3">
                         <h2 class="text-lg font-bold text-top-color">Experience</h2>
                         <div class="border-2 w-20 border-top-color my-3"></div>
 
-                        <div class="flex flex-col">
+                        <div class="grid grid-cols-1 gap-2">
 
                             <!-- MSD -->
                             <div class="flex flex-col">
@@ -278,7 +278,7 @@
                             </div>
 
                             <!-- Learn with One -->
-                            <div class="flex flex-col mt-8">
+                            <div class="flex flex-col">
                                 <p class="text-lg font-bold text-top-color">Learn with One | Game Developer</p>
                                 <p class="font-semibold text-sm text-top-color"><b><i>(9 Months)</i></b> Jan 2024 - Sept
                                     2024
@@ -292,7 +292,7 @@
                             </div>
 
                             <!-- MIT Gaming Club -->
-                            <div class="flex flex-col mt-8">
+                            <div class="flex flex-col">
                                 <p class="text-lg font-bold text-top-color">MIT Gaming Club | Game Development Head</p>
                                 <p class="font-semibold text-sm text-top-color"><b><i>(1 Year)</i></b> Oct 2021 - Oct
                                     2022</p>
