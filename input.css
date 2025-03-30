@@ -15,20 +15,22 @@
 
 @layer components {
 	.skill-hover{
-		@apply hover:text-icon-hover transition duration-125 ease-in-out transform hover:scale-110;
+		@apply hover:text-icon-hover transition duration-125 ease-in-out transform hover:scale-110
 	}
 	.icon-top-hover {
-		@apply hover:text-icon-hover transition duration-125 ease-in-out transform hover:scale-125;
+		@apply hover:text-icon-hover transition duration-125 ease-in-out transform hover:scale-125
 	}
 	.icon-end-hover {
-		@apply hover:text-end-hover transition duration-125 ease-in-out transform hover:scale-125;
+		@apply hover:text-end-hover transition duration-125 ease-in-out transform hover:scale-125
+
 	}
 	.page-title{
-		@apply text-top text-lg font-bold;
+		@apply text-top text-lg font-bold
 	}
 	.page-line{
-		@apply border-top my-3 w-20 border-2;
+		@apply border-top my-3 w-20 border-2
 	}
+
 	.experience-title{
 		@apply text-top text-lg font-bold
 	}
@@ -37,5 +39,15 @@
 	}
 	.experience-body-list{
 		@apply list-disc space-y-1 pl-4 text-sm
+	}
+
+	.education-title{
+		@apply text-lg font-bold
+	}
+	.education-subheading{
+		@apply text-top text-sm font-semibold
+	}
+	.education-time{
+		@apply text-top text-xs font-semibold
 	}
 }
