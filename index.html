@@ -4,29 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="content-type" content="no-cache" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+	<link href="./output.css" rel="stylesheet" />
     <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'base': '#d8e2fd', // very light blue
-                        'page': '#8a97b6', // gray blue
-                        'top-color': '#14213c', // dark blue
-                        'heading': '#8ed0fa', // light blue
-                        'subheading': '#f3f4f6',
-                        'body': '#ffffff', // white
-                        'icon': '#8ed0fa', // green
-                        'icon-hover': '#ea580c', // orange
-                        'end-hover': '#ff0000',
-                    },
-                    fontFamily: {
-                        'jetbrains': ['JetbrainsMonoNerdFont', 'monospace'],
-                    }
-                }
-            }
-        }
-
         function toggleDropdown(id) {
             document.getElementById(id).classList.toggle('hidden');
         }
@@ -35,9 +15,9 @@
 </head>
 
 <div class="bg-base text-body font-jetbrains p-4">
-    <div class="bg-page shadow-top-color rounded-lg border-1 shadow-lg">
+    <div class="bg-page shadow-top rounded-lg border-1 shadow-lg">
         <!-- Top Content -->
-        <div class="bg-top-color grid w-full grid-cols-3 items-center rounded-t-lg">
+        <div class="bg-top grid w-full grid-cols-3 items-center rounded-t-lg">
             <!-- Profile Photo -->
             <div class="flex justify-center">
                 <img class="h-0 w-0 rounded-full sm:h-40 sm:w-40" src="Profile Picture v2(Small).jpg" alt="" />
@@ -50,35 +30,35 @@
 
                 <!-- Social Links -->
                 <div class="text-icon my-5 flex items-center justify-center gap-6">
-                    <a class="hover:text-icon-hover" aria-label="LinkedIn" href="https://www.linkedin.com/in/kenzelkd/" target="_blank">
+                    <a class="icon-top-hover" aria-label="LinkedIn" href="https://www.linkedin.com/in/kenzelkd/" target="_blank">
                         <svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="h-7">
                             <title>LinkedIn</title>
                             <path fill="currentColor"
                                 d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path>
                         </svg>
                     </a>
-                    <a class="hover:text-icon-hover" aria-label="Email" href="mailto:kenzelkdsouza@gmail.com" target="_blank">
+                    <a class="icon-top-hover" aria-label="Email" href="mailto:kenzelkdsouza@gmail.com" target="_blank">
                         <svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-8">
                             <title>Email</title>
                             <path fill="currentColor"
                                 d="m16.484 11.976l6.151-5.344v10.627zm-7.926.905l2.16 1.875c.339.288.781.462 1.264.462h.017h-.001h.014c.484 0 .926-.175 1.269-.465l-.003.002l2.16-1.875l6.566 5.639H1.995zM1.986 5.365h20.03l-9.621 8.356a.6.6 0 0 1-.38.132h-.014h.001h-.014a.6.6 0 0 1-.381-.133l.001.001zm-.621 1.266l6.15 5.344l-6.15 5.28zm21.6-2.441c-.24-.12-.522-.19-.821-.19H1.859a1.9 1.9 0 0 0-.835.197l.011-.005A1.86 1.86 0 0 0 0 5.855v12.172a1.86 1.86 0 0 0 1.858 1.858h20.283a1.86 1.86 0 0 0 1.858-1.858V5.855c0-.727-.419-1.357-1.029-1.66l-.011-.005z" />
                         </svg>
                     </a>
-                    <a class="hover:text-icon-hover" aria-label="YouTube" href="https://www.youtube.com/@KenzelKD" target="_blank">
+                    <a class="icon-top-hover" aria-label="YouTube" href="https://www.youtube.com/@KenzelKD" target="_blank">
                         <svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34 24" class="h-6">
                             <title>YouTube</title>
                             <path fill="currentColor"
                                 d="m13.544 16.419l9.216-4.762l-9.216-4.818zM17.068 0q3.2 0 6.181.086t4.371.181l1.39.08q.019 0 .32.029c.167.013.317.033.465.061l-.026-.004q.134.029.448.086c.205.035.388.088.561.158L30.76.671q.229.095.534.248c.225.114.419.238.599.377l-.008-.006c.203.158.383.323.549.502l.003.003q.154.161.288.342l.007.01c.202.318.388.686.537 1.071l.015.044c.24.559.417 1.207.501 1.885l.004.035q.152 1.219.24 2.6t.105 2.16v3.352l.001.263c0 1.853-.125 3.678-.367 5.465l.023-.208a7.6 7.6 0 0 1-.498 1.946l.018-.051a4.8 4.8 0 0 1-.62 1.186l.01-.015l-.266.32a4.5 4.5 0 0 1-.542.497l-.01.008a3 3 0 0 1-.571.353l-.019.008q-.305.143-.534.24a2.6 2.6 0 0 1-.527.15l-.016.002q-.314.057-.457.086t-.438.057t-.314.029q-4.775.372-11.937.372q-3.943-.038-6.848-.124t-3.819-.143l-.934-.08l-.686-.08a9 9 0 0 1-1.102-.204l.062.013a6 6 0 0 1-1.003-.415l.032.015a3.8 3.8 0 0 1-1.075-.78l-.001-.001a4 4 0 0 1-.288-.342l-.007-.01a6 6 0 0 1-.537-1.071l-.015-.044a7 7 0 0 1-.501-1.885l-.004-.035q-.152-1.219-.24-2.6t-.105-2.16v-3.352l-.001-.263c0-1.853.125-3.678.367-5.465l-.023.208A7.6 7.6 0 0 1 .84 3.238l-.018.051c.162-.447.368-.834.62-1.186l-.01.015l.266-.32q.253-.272.542-.497l.01-.008c.172-.134.365-.257.57-.362l.021-.01q.305-.152.534-.248a2.6 2.6 0 0 1 .527-.15l.016-.002q.314-.057.448-.086c.121-.024.271-.044.424-.056l.015-.001q.305-.029.32-.029q4.783-.35 11.946-.35z" />
                         </svg>
                     </a>
-                    <a class="hover:text-icon-hover" aria-label="Twitch" href="https://www.twitch.tv/kenzelkd" target="_blank">
+                    <a class="icon-top-hover" aria-label="Twitch" href="https://www.twitch.tv/kenzelkd" target="_blank">
                         <svg role="img" viewBox="0 0 24 24" class="h-6" xmlns="http://www.w3.org/2000/svg">
                             <title>Twitch</title>
                             <path fill="currentColor" 
                                 d="M11.571 4.714h1.715v5.143H11.57zm4.715 0H18v5.143h-1.714zM6 0L1.714 4.286v15.428h5.143V24l4.286-4.286h3.428L22.286 12V0zm14.571 11.143l-3.428 3.428h-3.429l-3 3v-3H6.857V1.714h13.714Z" />
                         </svg>
                     </a>
-                    <a class="hover:text-icon-hover" aria-label="Phone" href="tel:+971507649825" target="_blank">
+                    <a class="icon-top-hover" aria-label="Phone" href="tel:+971507649825" target="_blank">
                         <svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-5 -translate-x-1.5 -translate-y-0.5">
                             <title>Phone</title>
                             <path fill="currentColor"
@@ -91,13 +71,15 @@
 
         <!-- Body Content -->
         <div class="p-5">
-            <!-- Side Content -->
             <div class="flex flex-col xl:flex-row">
+
+            <!-- Side Content -->
                 <div class="flex flex-col xl:mr-5 xl:w-1/3">
+
                     <!-- About me -->
                     <div class="order-1 py-3">
-                        <h2 class="text-top-color text-lg font-bold">About Me</h2>
-                        <div class="border-top-color my-3 w-20 border-2"></div>
+                        <h2 class="text-top text-lg font-bold">About Me</h2>
+                        <div class="border-top my-3 w-20 border-2"></div>
                         <p>
                             I am a Skilled <b><i>Game Developer</i></b> with Experience in <b><i>Unity, Unreal Engine 5, Blender, Houdini, DaVinci Resolve, Nvidia Omniverse, C#, C++ and C.</i></b>
                         </p>
@@ -105,14 +87,15 @@
 
                     <!-- Experience -->
                     <div class="order-2 py-3">
-                        <h2 class="text-top-color text-lg font-bold">Experience</h2>
-                        <div class="border-top-color my-3 w-20 border-2"></div>
+                        <h2 class="text-top text-lg font-bold">Experience</h2>
+                        <div class="border-top my-3 w-20 border-2"></div>
 
                         <div class="grid grid-cols-1 gap-4">
+							
                             <!-- MSD -->
                             <div class="flex flex-col">
-                                <p class="text-top-color text-lg font-bold">Mind Spirit Design | Game Developer</p>
-                                <p class="text-top-color text-sm font-semibold">
+                                <p class="text-top text-lg font-bold">Mind Spirit Design | Game Developer</p>
+                                <p class="text-top text-sm font-semibold">
                                     <b><i>(+6 Months)</i></b> Sept 2024 - Current
                                 </p>
                                 <ul class="list-disc space-y-1 pl-4 text-sm">
@@ -132,8 +115,8 @@
 
                             <!-- Learn with One -->
                             <div class="flex flex-col">
-                                <p class="text-top-color text-lg font-bold">Learn with One | Game Developer</p>
-                                <p class="text-top-color text-sm font-semibold">
+                                <p class="text-top text-lg font-bold">Learn with One | Game Developer</p>
+                                <p class="text-top text-sm font-semibold">
                                     <b><i>(9 Months)</i></b> Jan 2024 - Sept 2024
                                 </p>
                                 <ul class="list-disc space-y-1 pl-4 text-sm">
@@ -150,8 +133,8 @@
 
                             <!-- MIT Gaming Club -->
                             <div class="flex flex-col">
-                                <p class="text-top-color text-lg font-bold">MIT Gaming Club | Game Development Head</p>
-                                <p class="text-top-color text-sm font-semibold">
+                                <p class="text-top text-lg font-bold">MIT Gaming Club | Game Development Head</p>
+                                <p class="text-top text-sm font-semibold">
                                     <b><i>(1 Year)</i></b> Oct 2021 - Oct 2022
                                 </p>
                                 <ul class="list-disc space-y-1 pl-4 text-sm">
@@ -169,12 +152,12 @@
 
                     <!-- Skills -->
                     <div class="order-3 py-3">
-                        <h2 class="text-top-color text-lg font-bold">Skills</h2>
-                        <div class="border-top-color my-3 w-20 border-2"></div>
+                        <h2 class="text-top text-lg font-bold">Skills</h2>
+                        <div class="border-top my-3 w-20 border-2"></div>
 
                         <div class="grid grid-cols-2">
                             <!-- Unity Skill -->
-                            <a class="hover:text-icon-hover" href="https://www.youtube.com/@KenzelKD" target="_blank">
+                            <a class="skill-hover" href="https://www.youtube.com/@KenzelKD" target="_blank">
                                 <div class="my-2 flex items-start">
                                     <svg role="img" class="w-6" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                         <path fill="currentColor"
@@ -185,7 +168,7 @@
                             </a>
 
                             <!-- Unreal Engine 5 Skill -->
-                            <a class="hover:text-icon-hover" href="https://www.youtube.com/@KenzelKD" target="_blank">
+                            <a class="skill-hover" href="https://www.youtube.com/@KenzelKD" target="_blank">
                                 <div class="my-2 flex items-start">
                                     <svg role="img" xmlns="http://www.w3.org/2000/svg" class="w-6" viewBox="0 0 24 24">
                                         <path fill="currentColor"
@@ -196,7 +179,7 @@
                             </a>
 
                             <!-- Blender Skill -->
-                            <a class="hover:text-icon-hover" href="https://www.youtube.com/@KenzelKD" target="_blank">
+                            <a class="skill-hover" href="https://www.youtube.com/@KenzelKD" target="_blank">
                                 <div class="my-2 flex items-start">
                                     <svg role="img" class="w-6" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                         <path fill="currentColor"
@@ -207,7 +190,7 @@
                             </a>
 
                             <!-- Houdini Skill -->
-                            <a class="hover:text-icon-hover" href="https://www.youtube.com/@KenzelKD" target="_blank">
+                            <a class="skill-hover" href="https://www.youtube.com/@KenzelKD" target="_blank">
                                 <div class="my-2 flex items-start">
                                     <svg role="img" class="w-6" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                         <path fill="currentColor"
@@ -218,7 +201,7 @@
                             </a>
 
                             <!-- DaVinci Resolve Skill -->
-                            <a class="hover:text-icon-hover" href="https://www.youtube.com/@KenzelKD" target="_blank">
+                            <a class="skill-hover" href="https://www.youtube.com/@KenzelKD" target="_blank">
                                 <div class="my-2 flex items-start">
                                     <svg role="img" class="w-6" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                         <path fill="currentColor"
@@ -229,7 +212,7 @@
                             </a>
 
                             <!-- C# Skill -->
-                            <a class="hover:text-icon-hover" href="https://www.youtube.com/@KenzelKD" target="_blank">
+                            <a class="skill-hover" href="https://www.youtube.com/@KenzelKD" target="_blank">
                                 <div class="my-2 flex items-start">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="w-6" viewBox="0 0 50 50">
                                         <path fill="currentColor"
@@ -240,7 +223,7 @@
                             </a>
 
                             <!-- C++ Skill -->
-                            <a class="hover:text-icon-hover" href="https://www.youtube.com/@KenzelKD" target="_blank">
+                            <a class="skill-hover" href="https://www.youtube.com/@KenzelKD" target="_blank">
                                 <div class="my-2 flex items-start">
                                     <svg role="img" class="w-6" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                         <path fill="currentColor"
@@ -251,7 +234,7 @@
                             </a>
 
                             <!-- C Skill -->
-                            <a class="hover:text-icon-hover" href="https://www.youtube.com/@KenzelKD" target="_blank">
+                            <a class="skill-hover" href="https://www.youtube.com/@KenzelKD" target="_blank">
                                 <div class="my-2 flex items-start">
                                     <svg role="img" class="w-6" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                         <path fill="currentColor"
@@ -265,22 +248,22 @@
 
                     <!-- Education -->
                     <div class="order-4 py-3">
-                        <h2 class="text-top-color text-lg font-bold">Education</h2>
-                        <div class="border-top-color my-3 w-20 border-2"></div>
+                        <h2 class="text-top text-lg font-bold">Education</h2>
+                        <div class="border-top my-3 w-20 border-2"></div>
 
                         <div class="flex flex-col space-y-3">
                             <!-- MIT -->
                             <div class="flex flex-col">
                                 <p class="text-lg font-bold">Manipal Institute of Technology</p>
-                                <p class="text-s text-top-color font-semibold">B.Tech in Computer Science Engineering</p>
-                                <p class="text-top-color text-xs font-semibold">2019-2023</p>
+                                <p class="text-s text-top font-semibold">B.Tech in Computer Science Engineering</p>
+                                <p class="text-top text-xs font-semibold">2019-2023</p>
                             </div>
 
                             <!-- OOHS -->
                             <div class="flex flex-col">
                                 <p class="text-lg font-bold">Our Own High School, Al Warqa'a, Dubai</p>
-                                <p class="text-s text-top-color font-semibold">6th - 12th Grade</p>
-                                <p class="text-top-color text-xs font-semibold">2012-2019</p>
+                                <p class="text-s text-top font-semibold">6th - 12th Grade</p>
+                                <p class="text-top text-xs font-semibold">2012-2019</p>
                             </div>
                         </div>
                     </div>
@@ -290,13 +273,13 @@
                 <div class="order-first flex flex-col xl:order-none xl:w-2/3">
                     <!-- Projects -->
                     <div class="py-3">
-                        <h2 class="text-top-color text-lg font-bold">Projects</h2>
-                        <div class="border-top-color my-3 w-20 border-2"></div>
+                        <h2 class="text-top text-lg font-bold">Projects</h2>
+                        <div class="border-top my-3 w-20 border-2"></div>
 
                         <div class="flex flex-col">
                             <div class="space-y-4">
                                 <!-- Unity Section -->
-                                <div class="bg-top-color rounded-xl p-4 shadow-lg">
+                                <div class="bg-top rounded-xl p-4 shadow-lg">
                                     <button onclick="toggleDropdown('unityContent')" class="text-heading flex w-full items-center justify-between text-left text-2xl font-bold">
                                         Unity Reel
                                         <span>▼</span>
@@ -317,7 +300,7 @@
                                 </div>
 
                                 <!-- Unreal Section -->
-                                <div class="bg-top-color rounded-xl p-4 shadow-lg">
+                                <div class="bg-top rounded-xl p-4 shadow-lg">
                                     <button onclick="toggleDropdown('unrealContent')" class="text-heading flex w-full items-center justify-between text-left text-2xl font-bold">
                                         Unreal Engine 5 Reel
                                         <span>▼</span>
@@ -338,7 +321,7 @@
                                 </div>
 
                                 <!-- Blender Section -->
-                                <div class="bg-top-color rounded-xl p-4 shadow-lg">
+                                <div class="bg-top rounded-xl p-4 shadow-lg">
                                     <button onclick="toggleDropdown('blenderContent')" class="text-heading flex w-full items-center justify-between text-left text-2xl font-bold">
                                         Blender Reel
                                         <span>▼</span>
@@ -359,7 +342,7 @@
                                 </div>
 
                                 <!-- Houdini Section -->
-                                <div class="bg-top-color rounded-xl p-4 shadow-lg">
+                                <div class="bg-top rounded-xl p-4 shadow-lg">
                                     <button onclick="toggleDropdown('houdiniContent')" class="text-heading flex w-full items-center justify-between text-left text-2xl font-bold">
                                         Houdini Reel
                                         <span>▼</span>
@@ -380,7 +363,7 @@
                                 </div>
 
                                 <!-- DaVinci Resolve Section -->
-                                <div class="bg-top-color rounded-xl p-4 shadow-lg">
+                                <div class="bg-top rounded-xl p-4 shadow-lg">
                                     <button onclick="toggleDropdown('davinciContent')" class="text-heading flex w-full items-center justify-between text-left text-2xl font-bold">
                                         DaVinci Resolve Reel
                                         <span>▼</span>
@@ -401,7 +384,7 @@
                                 </div>
 
                                 <!-- Nvidia Omniverse Section -->
-                                <div class="bg-top-color rounded-xl p-4 shadow-lg">
+                                <div class="bg-top rounded-xl p-4 shadow-lg">
                                     <button onclick="toggleDropdown('omniverseContent')" class="text-heading flex w-full items-center justify-between text-left text-2xl font-bold">
                                         Nvidia Omniverse Reel
                                         <span>▼</span>
@@ -429,40 +412,40 @@
     </div>
 
     <!-- Footer Content -->
-    <footer class="text-top-color mt-12 text-center font-semibold">
-        <a href="#" class="hover:text-end-hover cursor-pointer" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">↑ Go Back Up ↑</a>
+    <footer class="text-top mt-12 text-center font-semibold">
+        <a href="#" class="icon-end-hover cursor-pointer" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">↑ Go Back Up ↑</a>
 
         <!-- End Social Links -->
-        <div class="text-top-color my-3 flex items-center justify-center gap-6">
-            <a class="hover:text-end-hover" aria-label="LinkedIn" href="https://www.linkedin.com/in/kenzelkd/" target="_blank">
+        <div class="text-top my-3 flex items-center justify-center gap-6">
+            <a class="icon-end-hover" aria-label="LinkedIn" href="https://www.linkedin.com/in/kenzelkd/" target="_blank">
                 <svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="h-7">
                     <title>LinkedIn</title>
                     <path fill="currentColor"
                         d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path>
                 </svg>
             </a>
-            <a class="hover:text-end-hover" aria-label="Email" href="mailto:kenzelkdsouza@gmail.com" target="_blank">
+            <a class="icon-end-hover" aria-label="Email" href="mailto:kenzelkdsouza@gmail.com" target="_blank">
                 <svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-8">
                     <title>Email</title>
                     <path fill="currentColor"
                         d="m16.484 11.976l6.151-5.344v10.627zm-7.926.905l2.16 1.875c.339.288.781.462 1.264.462h.017h-.001h.014c.484 0 .926-.175 1.269-.465l-.003.002l2.16-1.875l6.566 5.639H1.995zM1.986 5.365h20.03l-9.621 8.356a.6.6 0 0 1-.38.132h-.014h.001h-.014a.6.6 0 0 1-.381-.133l.001.001zm-.621 1.266l6.15 5.344l-6.15 5.28zm21.6-2.441c-.24-.12-.522-.19-.821-.19H1.859a1.9 1.9 0 0 0-.835.197l.011-.005A1.86 1.86 0 0 0 0 5.855v12.172a1.86 1.86 0 0 0 1.858 1.858h20.283a1.86 1.86 0 0 0 1.858-1.858V5.855c0-.727-.419-1.357-1.029-1.66l-.011-.005z" />
                 </svg>
             </a>
-            <a class="hover:text-end-hover" aria-label="YouTube" href="https://www.youtube.com/@KenzelKD" target="_blank">
+            <a class="icon-end-hover" aria-label="YouTube" href="https://www.youtube.com/@KenzelKD" target="_blank">
                 <svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34 24" class="h-6">
                     <title>YouTube</title>
                     <path fill="currentColor"
                         d="m13.544 16.419l9.216-4.762l-9.216-4.818zM17.068 0q3.2 0 6.181.086t4.371.181l1.39.08q.019 0 .32.029c.167.013.317.033.465.061l-.026-.004q.134.029.448.086c.205.035.388.088.561.158L30.76.671q.229.095.534.248c.225.114.419.238.599.377l-.008-.006c.203.158.383.323.549.502l.003.003q.154.161.288.342l.007.01c.202.318.388.686.537 1.071l.015.044c.24.559.417 1.207.501 1.885l.004.035q.152 1.219.24 2.6t.105 2.16v3.352l.001.263c0 1.853-.125 3.678-.367 5.465l.023-.208a7.6 7.6 0 0 1-.498 1.946l.018-.051a4.8 4.8 0 0 1-.62 1.186l.01-.015l-.266.32a4.5 4.5 0 0 1-.542.497l-.01.008a3 3 0 0 1-.571.353l-.019.008q-.305.143-.534.24a2.6 2.6 0 0 1-.527.15l-.016.002q-.314.057-.457.086t-.438.057t-.314.029q-4.775.372-11.937.372q-3.943-.038-6.848-.124t-3.819-.143l-.934-.08l-.686-.08a9 9 0 0 1-1.102-.204l.062.013a6 6 0 0 1-1.003-.415l.032.015a3.8 3.8 0 0 1-1.075-.78l-.001-.001a4 4 0 0 1-.288-.342l-.007-.01a6 6 0 0 1-.537-1.071l-.015-.044a7 7 0 0 1-.501-1.885l-.004-.035q-.152-1.219-.24-2.6t-.105-2.16v-3.352l-.001-.263c0-1.853.125-3.678.367-5.465l-.023.208A7.6 7.6 0 0 1 .84 3.238l-.018.051c.162-.447.368-.834.62-1.186l-.01.015l.266-.32q.253-.272.542-.497l.01-.008c.172-.134.365-.257.57-.362l.021-.01q.305-.152.534-.248a2.6 2.6 0 0 1 .527-.15l.016-.002q.314-.057.448-.086c.121-.024.271-.044.424-.056l.015-.001q.305-.029.32-.029q4.783-.35 11.946-.35z" />
                 </svg>
             </a>
-            <a class="hover:text-end-hover" aria-label="Twitch" href="https://www.twitch.tv/kenzelkd" target="_blank">
+            <a class="icon-end-hover" aria-label="Twitch" href="https://www.twitch.tv/kenzelkd" target="_blank">
                 <svg role="img" viewBox="0 0 24 24" class="h-6" xmlns="http://www.w3.org/2000/svg">
                     <title>Twitch</title>
                     <path fill="currentColor"
                         d="M11.571 4.714h1.715v5.143H11.57zm4.715 0H18v5.143h-1.714zM6 0L1.714 4.286v15.428h5.143V24l4.286-4.286h3.428L22.286 12V0zm14.571 11.143l-3.428 3.428h-3.429l-3 3v-3H6.857V1.714h13.714Z" />
                 </svg>
             </a>
-            <a class="hover:text-end-hover" aria-label="Phone" href="tel:+971507649825" target="_blank">
+            <a class="icon-end-hover" aria-label="Phone" href="tel:+971507649825" target="_blank">
                 <svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-5 -translate-x-1.5 -translate-y-0.5">
                     <title>Phone</title>
                     <path fill="currentColor"

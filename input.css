@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@theme {
+	--color-base: #d8e2fd;
+	--color-page: #8a97b6;
+	--color-top: #14213c;
+	--color-heading: #8ed0fa;
+	--color-subheading: #f3f4f6;
+	--color-body: #ffffff;
+	--color-icon: #8ed0fa;
+	--color-icon-hover: #ea580c;
+	--color-end-hover: #ff0000;
+	--font-jetbrains: JetbrainsMonoNerdFont, monospace;
+}
+
+@layer components {
+	.resume-headings{
+		@apply text-top text-lg font-bold;
+	}
+	.resume-line{
+		@apply border-top my-3 w-20 border-2;
+	}
+	
+	.skill-hover{
+		@apply hover:text-icon-hover transition duration-125 ease-in-out transform hover:scale-110;
+	}
+	.icon-top-hover {
+		@apply hover:text-icon-hover transition duration-125 ease-in-out transform hover:scale-125;
+	}
+	.icon-end-hover {
+		@apply hover:text-end-hover transition duration-125 ease-in-out transform hover:scale-125;
+	}
+	.project-title{
+		@apply 
+	}
+	.project-body{
+		@apply 
+	}
+}
