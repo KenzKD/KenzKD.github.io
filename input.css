@@ -14,54 +14,53 @@
 }
 
 @layer components {
-	.skill-hover{
-		@apply hover:text-icon-hover transition duration-125 ease-in-out transform hover:scale-110
+	
+	.skill-hover {
+		@apply transform transition duration-125 ease-in-out hover:scale-110 hover:text-icon-hover;
 	}
 	.icon-top-hover {
-		@apply hover:text-icon-hover transition duration-125 ease-in-out transform hover:scale-125
+		@apply transform transition duration-125 ease-in-out hover:scale-125 hover:text-icon-hover;
 	}
 	.icon-end-hover {
-		@apply hover:text-end-hover transition duration-125 ease-in-out transform hover:scale-125
-
+		@apply transform transition duration-125 ease-in-out hover:scale-125 hover:text-end-hover;
 	}
-	.page-title{
-		@apply text-top text-lg font-bold
+	.page-title {
+		@apply text-lg font-bold text-top;
 	}
-	.page-line{
-		@apply border-top my-3 w-20 border-2
+	.page-line {
+		@apply my-3 w-20 border-2 border-top;
 	}
-
-	.experience-title{
-		@apply text-top text-lg font-bold
+	
+	.experience-title {
+		@apply text-lg font-bold text-top;
 	}
-	.experience-time{
-		@apply text-top text-sm font-semibold
+	.experience-time {
+		@apply text-sm font-semibold text-top;
 	}
-	.experience-body-list{
-		@apply list-disc space-y-1 pl-4 text-sm
+	.experience-body-list {
+		@apply list-disc space-y-1 pl-4 text-sm;
 	}
-
-	.education-title{
-		@apply text-lg font-bold
+	
+	.education-title {
+		@apply text-lg font-bold;
 	}
-	.education-subheading{
-		@apply text-top text-sm font-semibold
+	.education-subheading {
+		@apply text-sm font-semibold text-top;
 	}
-	.education-time{
-		@apply text-top text-xs font-semibold
+	.education-time {
+		@apply text-xs font-semibold text-top;
 	}
-
-	.project-section{
-		@apply bg-top rounded-xl p-4 shadow-top shadow-lg
+	
+	.project-section {
+		@apply rounded-xl bg-top p-4 shadow-lg shadow-top;
 	}
-	.project-title{
-		@apply text-heading flex w-full items-center justify-between text-left text-2xl font-bold
+	.project-title {
+		@apply flex w-full items-center justify-between text-left text-2xl font-bold text-heading;
 	}
-	.project-body{
-		@apply text-page mt-4 text-sm
+	.project-body {
+		@apply mt-4 text-sm text-page;
 	}
-	.project-grid{
-		@apply mt-4 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3
+	.project-grid {
+		@apply mt-4 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3;
 	}
-
 }

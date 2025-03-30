@@ -283,6 +283,27 @@
                         <div class="flex flex-col">
                             <div class="space-y-4">
 
+                                <!-- Top 3 Section -->
+                                <div class="project-section">
+                                    <button onclick="toggleDropdown('top3Content')" class="project-title">
+                                        Top 3
+                                        <span>▼</span>
+                                    </button>
+                                    <p class="project-body">Level design, Visual Scripting, Sound Design, Ray Tracing</p>
+                                    <div id="top3Content" class="project-grid">
+                                        <!-- Add multiple videos here -->
+                                        <div class="aspect-w-16 aspect-h-9">
+                                            <iframe src="https://www.youtube.com/embed/kuG3uTCb5a4" allowfullscreen class="h-64 w-full"></iframe>
+                                        </div>
+                                        <div class="aspect-w-16 aspect-h-9">
+                                            <iframe src="https://www.youtube.com/embed/kuG3uTCb5a4" allowfullscreen class="h-64 w-full"></iframe>
+                                        </div>
+                                        <div class="aspect-w-16 aspect-h-9">
+                                            <iframe src="https://www.youtube.com/embed/kuG3uTCb5a4" allowfullscreen class="h-64 w-full"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+
                                 <!-- Unity Section -->
                                 <div class="project-section">
                                     <button onclick="toggleDropdown('unityContent')" class="project-title">
@@ -290,7 +311,7 @@
                                         <span>▼</span>
                                     </button>
                                     <p class="project-body">Level design, Visual Scripting, Sound Design, Ray Tracing</p>
-                                    <div id="unityContent" class="project-grid">
+                                    <div id="unityContent" class="project-grid hidden">
                                         <!-- Add multiple videos here -->
                                         <div class="aspect-w-16 aspect-h-9">
                                             <iframe src="https://www.youtube.com/embed/kuG3uTCb5a4" allowfullscreen class="h-64 w-full"></iframe>
