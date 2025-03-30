@@ -14,13 +14,6 @@
 }
 
 @layer components {
-	.resume-headings{
-		@apply text-top text-lg font-bold;
-	}
-	.resume-line{
-		@apply border-top my-3 w-20 border-2;
-	}
-	
 	.skill-hover{
 		@apply hover:text-icon-hover transition duration-125 ease-in-out transform hover:scale-110;
 	}
@@ -30,10 +23,19 @@
 	.icon-end-hover {
 		@apply hover:text-end-hover transition duration-125 ease-in-out transform hover:scale-125;
 	}
-	.project-title{
-		@apply 
+	.page-title{
+		@apply text-top text-lg font-bold;
 	}
-	.project-body{
-		@apply 
+	.page-line{
+		@apply border-top my-3 w-20 border-2;
+	}
+	.experience-title{
+		@apply text-top text-lg font-bold
+	}
+	.experience-time{
+		@apply text-top text-sm font-semibold
+	}
+	.experience-body-list{
+		@apply list-disc space-y-1 pl-4 text-sm
 	}
 }
