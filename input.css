@@ -50,4 +50,18 @@
 	.education-time{
 		@apply text-top text-xs font-semibold
 	}
+
+	.project-section{
+		@apply bg-top rounded-xl p-4 shadow-top shadow-lg
+	}
+	.project-title{
+		@apply text-heading flex w-full items-center justify-between text-left text-2xl font-bold
+	}
+	.project-body{
+		@apply text-page mt-4 text-sm
+	}
+	.project-grid{
+		@apply mt-4 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3
+	}
+
 }
