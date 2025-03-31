@@ -8,6 +8,12 @@
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
     <link href="./output.css" rel="stylesheet" />
     <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const toggleValue = new URLSearchParams(location.search).get("toggle");
+            const [sectionId, contentId] = toggleValue?.split(",") || [];
+            if (sectionId && contentId) toggleDropdown(sectionId, contentId);
+        });
+
         function toggleDropdown(Section_ID, Grid_ID) {
             document.getElementById(Grid_ID).classList.toggle('hidden');
             window.location.hash = '#' + Section_ID;
