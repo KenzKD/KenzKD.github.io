@@ -2008,6 +2008,11 @@
       }
     }
   }
+  .skill-div {
+    margin-block: calc(var(--spacing) * 2);
+    display: flex;
+    align-items: flex-start;
+  }
   .skill-icon {
     width: calc(var(--spacing) * 6);
   }

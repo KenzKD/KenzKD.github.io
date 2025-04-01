@@ -18,6 +18,9 @@
 	.skill-hover {
 		@apply transform transition duration-125 ease-in-out hover:scale-110 hover:text-icon-hover;
 	}
+	.skill-div{
+		@apply my-2 flex items-start;
+	}
 	.skill-icon{
 		@apply w-6;
 	}
