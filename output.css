@@ -383,9 +383,6 @@
   .mt-12 {
     margin-top: calc(var(--spacing) * 12);
   }
-  .ml-2 {
-    margin-left: calc(var(--spacing) * 2);
-  }
   .box-border {
     box-sizing: border-box;
   }
@@ -1415,10 +1412,6 @@
     --tw-leading: 1;
     line-height: 1;
   }
-  .font-bold {
-    --tw-font-weight: var(--font-weight-bold);
-    font-weight: var(--font-weight-bold);
-  }
   .font-extrabold {
     --tw-font-weight: var(--font-weight-extrabold);
     font-weight: var(--font-weight-extrabold);
@@ -2018,6 +2011,15 @@
       }
     }
   }
+  .skill-icon {
+    width: calc(var(--spacing) * 6);
+  }
+  .skill-text {
+    margin-left: calc(var(--spacing) * 2);
+    text-align: left;
+    --tw-font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
+  }
   .icon-top-hover {
     transform: var(--tw-rotate-x) var(--tw-rotate-y) var(--tw-rotate-z) var(--tw-skew-x) var(--tw-skew-y);
     transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter;
@@ -2124,6 +2126,7 @@
     color: var(--color-top);
   }
   .project-section {
+    scroll-margin-top: calc(var(--spacing) * 16);
     border-radius: var(--radius-xl);
     background-color: var(--color-top);
     background-position: top;

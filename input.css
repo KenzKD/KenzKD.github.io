@@ -18,6 +18,13 @@
 	.skill-hover {
 		@apply transform transition duration-125 ease-in-out hover:scale-110 hover:text-icon-hover;
 	}
+	.skill-icon{
+		@apply w-6;
+	}
+	.skill-text{
+		@apply ml-2 font-bold text-left;
+	}
+
 	.icon-top-hover {
 		@apply transform transition duration-125 ease-in-out hover:scale-125 hover:text-icon-hover;
 	}
