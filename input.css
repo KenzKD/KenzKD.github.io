@@ -15,17 +15,20 @@
 
 @layer components {
 	
+	.skill-grid{
+		@apply grid grid-cols-2 gap-4
+	}
 	.skill-hover {
 		@apply transform transition duration-125 ease-in-out hover:scale-110 hover:text-icon-hover;
 	}
 	.skill-div{
-		@apply my-2 flex items-start;
+		@apply flex items-center;
 	}
 	.skill-icon{
 		@apply w-6;
 	}
 	.skill-text{
-		@apply ml-2 font-bold text-left;
+		@apply ml-2 font-bold text-start;
 	}
 
 	.icon-top-hover {
@@ -63,6 +66,15 @@
 	
 	.project-section {
 		@apply md:scroll-mt-16 rounded-xl bg-top p-4 shadow-lg shadow-top;
+	}
+	.project-div{
+		@apply flex items-center;
+	}
+	.project-icon{
+		@apply w-8;
+	}
+	.project-text{
+		@apply ml-2 font-bold text-start;
 	}
 	.project-title {
 		@apply flex w-full items-center justify-between text-left text-2xl font-bold text-heading;
