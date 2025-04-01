@@ -79,8 +79,11 @@
 	.project-title {
 		@apply flex w-full items-center justify-between text-left text-2xl font-bold text-heading;
 	}
+	.project-number {
+		@apply mt-3  text-heading italic;
+	}
 	.project-body {
-		@apply mt-4 text-sm text-page;
+		@apply mt-0 text-sm text-page;
 	}
 	.project-grid {
 		@apply mt-4 grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3;
