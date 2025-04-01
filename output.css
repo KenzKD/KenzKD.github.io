@@ -480,6 +480,9 @@
   .h-6 {
     height: calc(var(--spacing) * 6);
   }
+  .h-6\.5 {
+    height: calc(var(--spacing) * 6.5);
+  }
   .h-7 {
     height: calc(var(--spacing) * 7);
   }
