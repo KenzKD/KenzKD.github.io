@@ -501,9 +501,6 @@
   .w-1\/2 {
     width: calc(1/2 * 100%);
   }
-  .w-6 {
-    width: calc(var(--spacing) * 6);
-  }
   .w-full {
     width: 100%;
   }
@@ -2126,7 +2123,6 @@
     color: var(--color-top);
   }
   .project-section {
-    scroll-margin-top: calc(var(--spacing) * 16);
     border-radius: var(--radius-xl);
     background-color: var(--color-top);
     background-position: top;
@@ -2134,6 +2130,9 @@
     --tw-shadow: 0 10px 15px -3px var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 4px 6px -4px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
     --tw-shadow-color: var(--color-top);
+    @media (width >= 48rem) {
+      scroll-margin-top: calc(var(--spacing) * 16);
+    }
   }
   .project-title {
     display: flex;

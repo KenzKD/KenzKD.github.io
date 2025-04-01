@@ -59,7 +59,7 @@
 	}
 	
 	.project-section {
-		@apply scroll-mt-16 rounded-xl bg-top p-4 shadow-lg shadow-top;
+		@apply md:scroll-mt-16 rounded-xl bg-top p-4 shadow-lg shadow-top;
 	}
 	.project-title {
 		@apply flex w-full items-center justify-between text-left text-2xl font-bold text-heading;
