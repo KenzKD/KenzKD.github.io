@@ -9,14 +9,13 @@
     <link href="./output.css" rel="stylesheet" />
     <script>
         document.addEventListener("DOMContentLoaded", () => {
-            const toggleValue = new URLSearchParams(location.search).get("toggle");
-            const [sectionId, contentId] = toggleValue?.split(",") || [];
-            if (sectionId && contentId) toggleDropdown(sectionId, contentId);
+            const id = new URLSearchParams(location.search).get("toggle");
+            if (id) toggleDropdown(id);
         });
 
-        function toggleDropdown(Section_ID, Grid_ID) {
-            document.getElementById(Grid_ID).classList.toggle('hidden');
-            window.location.hash = '#' + Section_ID;
+        function toggleDropdown(id) {
+            document.getElementById(`${id}Content`)?.classList.toggle('hidden');
+            location.hash = `#${id}Section`;
         }
     </script>
     <title></title>
@@ -166,7 +165,7 @@
                         <div class="grid grid-cols-2">
 
                             <!-- Unity Skill -->
-                            <button class="skill-hover" onclick="toggleDropdown('unitySection','unityContent')">
+                            <button class="skill-hover" onclick="toggleDropdown('unity')">
                                 <div class="my-2 flex items-start">
                                     <svg role="img" class="w-6" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                         <path fill="currentColor"
@@ -177,7 +176,7 @@
                             </button>
 
                             <!-- Unreal Engine 5 Skill -->
-                            <button class="skill-hover" onclick="toggleDropdown('unrealSection','unrealContent')">
+                            <button class="skill-hover" onclick="toggleDropdown('unreal')">
                                 <div class="my-2 flex items-start">
                                     <svg role="img" xmlns="http://www.w3.org/2000/svg" class="w-6" viewBox="0 0 24 24">
                                         <path fill="currentColor"
@@ -188,7 +187,7 @@
                             </button>
 
                             <!-- Blender Skill -->
-                            <button class="skill-hover" onclick="toggleDropdown('blenderSection','blenderContent')">
+                            <button class="skill-hover" onclick="toggleDropdown('blender')">
                                 <div class="my-2 flex items-start">
                                     <svg role="img" class="w-6" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                         <path fill="currentColor"
@@ -199,7 +198,7 @@
                             </button>
 
                             <!-- Houdini Skill -->
-                            <button class="skill-hover" onclick="toggleDropdown('houdiniSection','houdiniContent')">
+                            <button class="skill-hover" onclick="toggleDropdown('houdini')">
                                 <div class="my-2 flex items-start">
                                     <svg role="img" class="w-6" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                         <path fill="currentColor"
@@ -210,7 +209,7 @@
                             </button>
 
                             <!-- DaVinci Resolve Skill -->
-                            <button class="skill-hover" onclick="toggleDropdown('davinciSection','davinciContent')">
+                            <button class="skill-hover" onclick="toggleDropdown('davinci')">
                                 <div class="my-2 flex items-start">
                                     <svg role="img" class="w-6" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                         <path fill="currentColor"
@@ -221,7 +220,7 @@
                             </button>
 
                             <!-- Omniverse Skill -->
-                            <button class="skill-hover" onclick="toggleDropdown('omniverseSection','omniverseContent')">
+                            <button class="skill-hover" onclick="toggleDropdown('omniverse')">
                                 <div class="my-2 flex items-start">
                                     <svg role="img" class="w-6" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                         <path fill="currentColor"
@@ -325,7 +324,7 @@
 
                                 <!-- Top 3 Section -->
                                 <div id="highlightsSection" class="project-section">
-                                    <button onclick="toggleDropdown('highlightsSection','highlightsContent')" class="project-title">
+                                    <button onclick="toggleDropdown('highlights')" class="project-title">
                                         Highlights
                                         <span>▼</span>
                                     </button>
@@ -340,7 +339,7 @@
 
                                 <!-- Unity Section -->
                                 <div id="unitySection" class="project-section">
-                                    <button onclick="toggleDropdown('unitySection','unityContent')" class="project-title">
+                                    <button onclick="toggleDropdown('unity')" class="project-title">
                                         Unity Reel
                                         <span>▼</span>
                                     </button>
@@ -367,7 +366,7 @@
 
                                 <!-- Unreal Section -->
                                 <div id="unrealSection" class="project-section">
-                                    <button onclick="toggleDropdown('unrealSection','unrealContent')" class="project-title">
+                                    <button onclick="toggleDropdown('unreal')" class="project-title">
                                         Unreal Engine 5 Reel
                                         <span>▼</span>
                                     </button>
@@ -389,7 +388,7 @@
 
                                 <!-- Blender Section -->
                                 <div id="blenderSection" class="project-section">
-                                    <button onclick="toggleDropdown('blenderSection','blenderContent')" class="project-title">
+                                    <button onclick="toggleDropdown('blender')" class="project-title">
                                         Blender Reel
                                         <span>▼</span>
                                     </button>
@@ -415,7 +414,7 @@
 
                                 <!-- Houdini Section -->
                                 <div id="houdiniSection" class="project-section">
-                                    <button onclick="toggleDropdown('houdiniSection','houdiniContent')" class="project-title">
+                                    <button onclick="toggleDropdown('houdini')" class="project-title">
                                         Houdini Reel
                                         <span>▼</span>
                                     </button>
@@ -434,7 +433,7 @@
 
                                 <!-- DaVinci Resolve Section -->
                                 <div id="davinciSection" class="project-section">
-                                    <button onclick="toggleDropdown('davinciSection','davinciContent')" class="project-title">
+                                    <button onclick="toggleDropdown('davinci')" class="project-title">
                                         DaVinci Resolve Reel
                                         <span>▼</span>
                                     </button>
@@ -460,7 +459,7 @@
 
                                 <!-- Nvidia Omniverse Section -->
                                 <div id="omniverseSection" class="project-section">
-                                    <button onclick="toggleDropdown('omniverseSection','omniverseContent')" class="project-title">
+                                    <button onclick="toggleDropdown('omniverse')" class="project-title">
                                         Nvidia Omniverse Reel
                                         <span>▼</span>
                                     </button>
