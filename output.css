@@ -2029,6 +2029,7 @@
   }
   .skill-icon {
     width: calc(var(--spacing) * 6);
+    flex-shrink: 0;
   }
   .skill-text {
     margin-left: calc(var(--spacing) * 2);
@@ -2159,6 +2160,7 @@
   }
   .project-icon {
     width: calc(var(--spacing) * 8);
+    flex-shrink: 0;
   }
   .project-text {
     margin-left: calc(var(--spacing) * 2);

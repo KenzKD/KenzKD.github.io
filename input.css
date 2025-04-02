@@ -25,7 +25,7 @@
 		@apply flex items-center;
 	}
 	.skill-icon{
-		@apply w-6;
+		@apply w-6 shrink-0;
 	}
 	.skill-text{
 		@apply ml-2 font-bold text-start;
@@ -71,7 +71,7 @@
 		@apply flex items-center;
 	}
 	.project-icon{
-		@apply w-8;
+		@apply w-8 shrink-0;
 	}
 	.project-text{
 		@apply ml-2 font-bold text-start;
