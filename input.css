@@ -77,7 +77,7 @@
 		@apply ml-2 font-bold text-start;
 	}
 	.project-title {
-		@apply flex w-full items-center justify-between text-left text-2xl font-bold text-heading;
+		@apply flex w-full items-center justify-between text-left text-2xl font-bold text-heading hover:text-body;
 	}
 	.project-number {
 		@apply mt-3  text-heading italic;

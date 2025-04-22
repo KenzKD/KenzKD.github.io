@@ -608,6 +608,11 @@
     --tw-font-weight: var(--font-weight-bold);
     font-weight: var(--font-weight-bold);
     color: var(--color-heading);
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-body);
+      }
+    }
   }
   .project-number {
     margin-top: calc(var(--spacing) * 3);
