@@ -91,4 +91,7 @@
 	.project-vid {
 		@apply h-64 w-full rounded-lg shadow-lg shadow-black;
 	}
+	.project-vid-text{
+		@apply mt-4 mx-4 text-heading text-start;
+	}
 }

@@ -648,6 +648,12 @@
       --tw-shadow-color: color-mix(in oklab, var(--color-black) var(--tw-shadow-alpha), transparent);
     }
   }
+  .project-vid-text {
+    margin-inline: calc(var(--spacing) * 4);
+    margin-top: calc(var(--spacing) * 4);
+    text-align: start;
+    color: var(--color-heading);
+  }
 }
 @property --tw-translate-x {
   syntax: "*";
