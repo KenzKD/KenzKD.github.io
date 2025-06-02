@@ -204,6 +204,18 @@
   .col-span-3 {
     grid-column: span 3 / span 3;
   }
+  .-mx-5 {
+    margin-inline: calc(var(--spacing) * -5);
+  }
+  .mx-5 {
+    margin-inline: calc(var(--spacing) * 5);
+  }
+  .mx-10 {
+    margin-inline: calc(var(--spacing) * 10);
+  }
+  .my-0 {
+    margin-block: calc(var(--spacing) * 0);
+  }
   .my-3 {
     margin-block: calc(var(--spacing) * 3);
   }
@@ -353,6 +365,12 @@
   .gap-4 {
     gap: calc(var(--spacing) * 4);
   }
+  .gap-4\.5 {
+    gap: calc(var(--spacing) * 4.5);
+  }
+  .gap-5 {
+    gap: calc(var(--spacing) * 5);
+  }
   .gap-6 {
     gap: calc(var(--spacing) * 6);
   }
@@ -413,6 +431,9 @@
   }
   .text-center {
     text-align: center;
+  }
+  .align-middle {
+    vertical-align: middle;
   }
   .font-jetbrains {
     font-family: var(--font-jetbrains);
