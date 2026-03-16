@@ -50,6 +50,9 @@
 	.experience-time {
 		@apply text-sm font-semibold text-top;
 	}
+	.experience-clients {
+		@apply text-sm font-semibold text-top;
+	}
 	.experience-body-list {
 		@apply list-disc space-y-1 pl-4 text-sm;
 	}

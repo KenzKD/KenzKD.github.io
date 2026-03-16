@@ -554,6 +554,13 @@
     font-weight: var(--font-weight-semibold);
     color: var(--color-top);
   }
+  .experience-clients {
+    font-size: var(--text-sm);
+    line-height: var(--tw-leading, var(--text-sm--line-height));
+    --tw-font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-top);
+  }
   .experience-body-list {
     list-style-type: disc;
     :where(& > :not(:last-child)) {
