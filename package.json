@@ -18,7 +18,7 @@
   "homepage": "https://github.com/KenzKD/KenzKD.github.io#readme",
   "description": "",
   "dependencies": {
-    "@tailwindcss/cli": "^4.3.0",
-    "tailwindcss": "^4.3.0"
+    "@tailwindcss/cli": "^4.3.3",
+    "tailwindcss": "^4.3.3"
   }
 }
