@@ -16,17 +16,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="./output.css" rel="stylesheet" />
 
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const id = new URLSearchParams(location.search).get("toggle");
-            if (id) toggleDropdown(id);
-        });
-
-        function toggleDropdown(id) {
-            document.getElementById(`${id}Content`)?.classList.toggle('hidden');
-            location.hash = `#${id}Section`;
-        }
-    </script>
+    <script src="./portfolio.js" defer></script>
 
     <!-- MetaData Stuff -->
     <title>Kenzel Software Engineer Portfolio</title>
@@ -415,7 +405,7 @@
                                         <!-- Add Highlights videos here -->
                                         <div>
                                             <!-- Body Tracking Game -->
-                                            <iframe src="https://www.youtube.com/embed/aiK92Ka1g9E?mute=1&autoplay=1&loop=1&playlist=aiK92Ka1g9E" allowfullscreen class="project-vid"></iframe>
+                                            <div data-yt="aiK92Ka1g9E"></div>
                                             <p class="project-vid-text">
                                                 Utilized <b><i>XR Animator</i></b> & a <b><i>Webcam</i></b> to track body movement, sending data to <b><i>Unreal Engine</i></b> via <b><i>Virtual Motion Capture (VMC) Protocol.</i></b> The tracked data was applied to a <b><i>Character</i></b>, enhanced with <b><i>Diverse Visual Styles</i></b> using <b><i>Advanced Niagara Effects</i></b>.
                                             </p>
@@ -423,10 +413,7 @@
 
                                         <!-- 3D Hologram Game -->
                                         <div>
-                                            <!-- Desktop Autoplay Video -->
-                                            <iframe src="https://www.youtube.com/embed/uOqjJwy8IHQ?mute=1&autoplay=1&loop=1&playlist=uOqjJwy8IHQ" allowfullscreen class="project-vid hidden md:block"></iframe>
-                                            <!-- Mobile Simple Video -->
-                                            <iframe src="https://www.youtube.com/embed/uOqjJwy8IHQ?mute=1&loop=1&playlist=uOqjJwy8IHQ" allowfullscreen class="project-vid md:hidden"></iframe>
+                                            <div data-yt="uOqjJwy8IHQ"></div>
                                             <p class="project-vid-text">
                                                 Created a <b><i>Randomized Unity Quiz Game</i></b> for an event at the <b><i>Dubai British Embassy</i></b>, featuring a pool of <b><i>30+ Multiple-Choice Questions</i></b> with <b><i>5 Selected Per Playthrough</i></b>. Each answer triggered a <b><i>Character Video</i></b> displayed on a <b><i>Holographic Screen</i></b>.
                                             </p>
@@ -434,10 +421,7 @@
 
                                         <!-- Motion & Time Game -->
                                         <div>
-                                            <!-- Desktop Autoplay Video -->
-                                            <iframe src="https://www.youtube.com/embed/eNUKIiS6tPA?mute=1&autoplay=1&loop=1&playlist=eNUKIiS6tPA" allowfullscreen class="project-vid hidden md:block"></iframe>
-                                            <!-- Mobile Simple Video -->
-                                            <iframe src="https://www.youtube.com/embed/eNUKIiS6tPA?mute=1&loop=1&playlist=eNUKIiS6tPA" allowfullscreen class="project-vid md:hidden"></iframe>
+                                            <div data-yt="eNUKIiS6tPA"></div>
                                             <p class="project-vid-text">
                                                 Showcases a range of <b><i>Interactive Mechanics</i></b>, including <b><i>Drag-and-Drop</i></b>, <b><i>Driving</i></b> & <b><i>MCQ Quiz Features</i></b>, along with <b><i>Animated Line Graphs</i></b> & <b><i>UI/Game Animations</i></b> powered by <b><i>DOTween</i></b>.
                                             </p>
@@ -445,10 +429,7 @@
 
                                         <!-- WaterFall Scene Game -->
                                         <div>
-                                            <!-- Desktop Autoplay Video -->
-                                            <iframe src="https://www.youtube.com/embed/DET_XRMAZFo?mute=1&autoplay=1&loop=1&playlist=DET_XRMAZFo" allowfullscreen class="project-vid hidden md:block"></iframe>
-                                            <!-- Mobile Simple Video -->
-                                            <iframe src="https://www.youtube.com/embed/DET_XRMAZFo?mute=1&loop=1&playlist=DET_XRMAZFo" allowfullscreen class="project-vid md:hidden"></iframe>
+                                            <div data-yt="DET_XRMAZFo"></div>
                                             <p class="project-vid-text">
                                                 Utilized <b><i>Unreal Engine's 3rd Person Template</i></b> to craft a <b><i>Serene Waterfall Environment</i></b> featuring a <b><i>Blacksmith Hut</i></b>. Focused on <b><i>Level Design</i></b> & <b><i>Audio Design</i></b> to bring the scenery to life.
                                             </p>
@@ -456,10 +437,7 @@
 
                                         <!-- Light Game -->
                                         <div>
-                                            <!-- Desktop Autoplay Video -->
-                                            <iframe src="https://www.youtube.com/embed/XsxE1yIdcMM?mute=1&autoplay=1&loop=1&playlist=XsxE1yIdcMM" allowfullscreen class="project-vid hidden md:block"></iframe>
-                                            <!-- Mobile Simple Video -->
-                                            <iframe src="https://www.youtube.com/embed/XsxE1yIdcMM?mute=1&loop=1&playlist=XsxE1yIdcMM" allowfullscreen class="project-vid md:hidden"></iframe>
+                                            <div data-yt="XsxE1yIdcMM"></div>
                                             <p class="project-vid-text">
                                                 Developed a <b><i>Diverse Portfolio</i></b> of <b><i>Interactive PC & Android Games</i></b> featuring <b><i>Hardware Integrations</i></b>, delivered through <b><i>Freelance engagements</i></b>.
                                             </p>
@@ -467,10 +445,7 @@
 
                                         <!-- Eternal Ascent Animation -->
                                         <div>
-                                            <!-- Desktop Autoplay Video -->
-                                            <iframe src="https://www.youtube.com/embed/W183m3C043Q?mute=1&autoplay=1&loop=1&playlist=W183m3C043Q" allowfullscreen class="project-vid hidden md:block"></iframe>
-                                            <!-- Mobile Simple Video -->
-                                            <iframe src="https://www.youtube.com/embed/W183m3C043Q?mute=1&loop=1&playlist=W183m3C043Q" allowfullscreen class="project-vid md:hidden"></iframe>
+                                            <div data-yt="W183m3C043Q"></div>
                                             <p class="project-vid-text">
                                                 Features a <b><i>Liquid Simulation</i></b> emerging from a <b><i>Dynamic Staircase</i></b>, with <b><i>Retargeted Character Animation</i></b>, <b><i>Scattered Houses</i></b> using <b><i>Geometry Nodes</i></b> & enhanced visuals through <b><i>Post-Processing</i></b>.
                                             </p>
@@ -493,28 +468,28 @@
                                     <p class="project-body">C#, Game Design, Game Mechanics, 3D Animation</p>
                                     <div id="unityContent" class="project-grid hidden">
                                         <!-- Add Unity videos here -->
-                                        <!-- <iframe src="https://www.youtube.com/embed/LwuYVuduthU?mute=1&loop=1&playlist=LwuYVuduthU" allowfullscreen class="project-vid"></iframe> -->
-                                        <iframe src="https://www.youtube.com/embed/XsxE1yIdcMM?mute=1&loop=1&playlist=XsxE1yIdcMM" allowfullscreen class="project-vid"></iframe>
-                                        <!-- <iframe src="https://www.youtube.com/embed/LwuYVuduthU?mute=1&loop=1&playlist=LwuYVuduthU" allowfullscreen class="project-vid"></iframe> -->
-                                        <!-- <iframe src="https://www.youtube.com/embed/u-iyjJnrjdU?mute=1&loop=1&playlist=u-iyjJnrjdU" allowfullscreen class="project-vid"></iframe> -->
-                                        <!-- <iframe src="https://www.youtube.com/embed/drwsugfkP14?mute=1&loop=1&playlist=drwsugfkP14" allowfullscreen class="project-vid"></iframe> -->
-                                        <!-- <iframe src="https://www.youtube.com/embed/9nAonyergOw?mute=1&loop=1&playlist=9nAonyergOw" allowfullscreen class="project-vid"></iframe> -->
-                                        <!-- <iframe src="https://www.youtube.com/embed/BqJgi7fZS8Q?mute=1&loop=1&playlist=BqJgi7fZS8Q" allowfullscreen class="project-vid"></iframe> -->
-                                        <!-- <iframe src="https://www.youtube.com/embed/Yw90r6Sd6w0?mute=1&loop=1&playlist=Yw90r6Sd6w0" allowfullscreen class="project-vid"></iframe> -->
-                                        <iframe src="https://www.youtube.com/embed/uOqjJwy8IHQ?mute=1&loop=1&playlist=uOqjJwy8IHQ" allowfullscreen class="project-vid"></iframe>
-                                        <iframe src="https://www.youtube.com/embed/eNUKIiS6tPA?mute=1&loop=1&playlist=eNUKIiS6tPA" allowfullscreen class="project-vid"></iframe>
-                                        <!-- <iframe src="https://www.youtube.com/embed/lV3qzGQkvYs?mute=1&loop=1&playlist=lV3qzGQkvYs" allowfullscreen class="project-vid"></iframe> -->
-                                        <!-- <iframe src="https://www.youtube.com/embed/xRQ3EaID9aM?mute=1&loop=1&playlist=xRQ3EaID9aM" allowfullscreen class="project-vid"></iframe> -->
-                                        <!-- <iframe src="https://www.youtube.com/embed/HLjxeG_xT9Y?mute=1&loop=1&playlist=HLjxeG_xT9Y" allowfullscreen class="project-vid"></iframe> -->
-                                        <!-- <iframe src="https://www.youtube.com/embed/sdNL2He7ido?mute=1&loop=1&playlist=sdNL2He7ido" allowfullscreen class="project-vid"></iframe> -->
-                                        <iframe src="https://www.youtube.com/embed/8beeIrEBX7I?mute=1&loop=1&playlist=8beeIrEBX7I" allowfullscreen class="project-vid"></iframe>
-                                        <iframe src="https://www.youtube.com/embed/rz4C2K73sq8?mute=1&loop=1&playlist=rz4C2K73sq8" allowfullscreen class="project-vid"></iframe>
-                                        <!-- <iframe src="https://www.youtube.com/embed/asIuv0wx7oI?mute=1&loop=1&playlist=asIuv0wx7oI" allowfullscreen class="project-vid"></iframe> -->
-                                        <!-- <iframe src="https://www.youtube.com/embed/lKK-MYjXvys?mute=1&loop=1&playlist=lKK-MYjXvys" allowfullscreen class="project-vid"></iframe> -->
-                                        <!-- <iframe src="https://www.youtube.com/embed/jKZNj13BB34?mute=1&loop=1&playlist=jKZNj13BB34" allowfullscreen class="project-vid"></iframe> -->
-                                        <!-- <iframe src="https://www.youtube.com/embed/epjZGht1T2M?mute=1&loop=1&playlist=epjZGht1T2M" allowfullscreen class="project-vid"></iframe> -->
-                                        <!-- <iframe src="https://www.youtube.com/embed/B9az5lWMAXk?mute=1&loop=1&playlist=B9az5lWMAXk" allowfullscreen class="project-vid"></iframe> -->
-                                        <iframe src="https://www.youtube.com/embed/UOVz8InVNE4?mute=1&loop=1&playlist=UOVz8InVNE4" allowfullscreen class="project-vid"></iframe>
+                                        <!-- <div data-yt="LwuYVuduthU"></div> -->
+                                        <div data-yt="XsxE1yIdcMM"></div>
+                                        <!-- <div data-yt="LwuYVuduthU"></div> -->
+                                        <!-- <div data-yt="u-iyjJnrjdU"></div> -->
+                                        <!-- <div data-yt="drwsugfkP14"></div> -->
+                                        <!-- <div data-yt="9nAonyergOw"></div> -->
+                                        <!-- <div data-yt="BqJgi7fZS8Q"></div> -->
+                                        <!-- <div data-yt="Yw90r6Sd6w0"></div> -->
+                                        <div data-yt="uOqjJwy8IHQ"></div>
+                                        <div data-yt="eNUKIiS6tPA"></div>
+                                        <!-- <div data-yt="lV3qzGQkvYs"></div> -->
+                                        <!-- <div data-yt="xRQ3EaID9aM"></div> -->
+                                        <!-- <div data-yt="HLjxeG_xT9Y"></div> -->
+                                        <!-- <div data-yt="sdNL2He7ido"></div> -->
+                                        <div data-yt="8beeIrEBX7I"></div>
+                                        <div data-yt="rz4C2K73sq8"></div>
+                                        <!-- <div data-yt="asIuv0wx7oI"></div> -->
+                                        <!-- <div data-yt="lKK-MYjXvys"></div> -->
+                                        <!-- <div data-yt="jKZNj13BB34"></div> -->
+                                        <!-- <div data-yt="epjZGht1T2M"></div> -->
+                                        <!-- <div data-yt="B9az5lWMAXk"></div> -->
+                                        <div data-yt="UOVz8InVNE4"></div>
                                     </div>
                                 </div>
 
@@ -533,18 +508,18 @@
                                     <p class="project-body">Level design, Visual Scripting, Sound Design, Ray Tracing</p>
                                     <div id="unrealContent" class="project-grid hidden">
                                         <!-- Add Unreal Engine 5 videos here -->
-                                        <!-- <iframe src="https://www.youtube.com/embed/dvklmad-t8g?mute=1&loop=1&playlist=dvklmad-t8g" allowfullscreen class="project-vid"></iframe> -->
-                                        <iframe src="https://www.youtube.com/embed/aiK92Ka1g9E?mute=1&loop=1&playlist=aiK92Ka1g9E" allowfullscreen class="project-vid"></iframe>
-                                        <iframe src="https://www.youtube.com/embed/ohKRPZEn8i4?mute=1&loop=1&playlist=ohKRPZEn8i4" allowfullscreen class="project-vid"></iframe>
-                                        <!-- <iframe src="https://www.youtube.com/embed/wIYeO4QbA-U?mute=1&loop=1&playlist=wIYeO4QbA-U" allowfullscreen class="project-vid"></iframe> -->
-                                        <iframe src="https://www.youtube.com/embed/DET_XRMAZFo?mute=1&loop=1&playlist=DET_XRMAZFo" allowfullscreen class="project-vid"></iframe>
-                                        <!-- <iframe src="https://www.youtube.com/embed/nODhmMsXjT0?mute=1&loop=1&playlist=nODhmMsXjT0" allowfullscreen class="project-vid"></iframe> -->
-                                        <iframe src="https://www.youtube.com/embed/KlyvyZeOlYE?mute=1&loop=1&playlist=KlyvyZeOlYE" allowfullscreen class="project-vid"></iframe>
-                                        <iframe src="https://www.youtube.com/embed/gUVn7xhJPH8?mute=1&loop=1&playlist=gUVn7xhJPH8" allowfullscreen class="project-vid"></iframe>
-                                        <!-- <iframe src="https://www.youtube.com/embed/hdvysJTAbGw?mute=1&loop=1&playlist=hdvysJTAbGw" allowfullscreen class="project-vid"></iframe> -->
-                                        <!-- <iframe src="https://www.youtube.com/embed/r1zGAzjCF8A?mute=1&loop=1&playlist=r1zGAzjCF8A" allowfullscreen class="project-vid"></iframe> -->
-                                        <iframe src="https://www.youtube.com/embed/QANRQ_0CsFM?mute=1&loop=1&playlist=QANRQ_0CsFM" allowfullscreen class="project-vid"></iframe>
-                                        <!-- <iframe src="https://www.youtube.com/embed/-KT17EJpu-o?mute=1&loop=1&playlist=-KT17EJpu-o" allowfullscreen class="project-vid"></iframe> -->
+                                        <!-- <div data-yt="dvklmad-t8g"></div> -->
+                                        <div data-yt="aiK92Ka1g9E"></div>
+                                        <div data-yt="ohKRPZEn8i4"></div>
+                                        <!-- <div data-yt="wIYeO4QbA-U"></div> -->
+                                        <div data-yt="DET_XRMAZFo"></div>
+                                        <!-- <div data-yt="nODhmMsXjT0"></div> -->
+                                        <div data-yt="KlyvyZeOlYE"></div>
+                                        <div data-yt="gUVn7xhJPH8"></div>
+                                        <!-- <div data-yt="hdvysJTAbGw"></div> -->
+                                        <!-- <div data-yt="r1zGAzjCF8A"></div> -->
+                                        <div data-yt="QANRQ_0CsFM"></div>
+                                        <!-- <div data-yt="-KT17EJpu-o"></div> -->
 
                                     </div>
                                 </div>
@@ -564,19 +539,19 @@
                                     <p class="project-body">3D Modelling, Sculpting, Animation, Simulations, Texturing</p>
                                     <div id="blenderContent" class="project-grid hidden">
                                         <!-- Add Blender videos here -->
-                                        <iframe src="https://www.youtube.com/embed/muE892nOdNQ?mute=1&loop=1&playlist=muE892nOdNQ" allowfullscreen class="project-vid"></iframe>
-                                        <iframe src="https://www.youtube.com/embed/W183m3C043Q?mute=1&loop=1&playlist=W183m3C043Q" allowfullscreen class="project-vid"></iframe>
-                                        <!-- <iframe src="https://www.youtube.com/embed/KELYhz2GEZk?mute=1&loop=1&playlist=KELYhz2GEZk" allowfullscreen class="project-vid"></iframe> -->
-                                        <iframe src="https://www.youtube.com/embed/OOs80iDnQzc?mute=1&loop=1&playlist=OOs80iDnQzc" allowfullscreen class="project-vid"></iframe>
-                                        <!-- <iframe src="https://www.youtube.com/embed/0zLzCLcaCbk?mute=1&loop=1&playlist=0zLzCLcaCbk" allowfullscreen class="project-vid"></iframe> -->
-                                        <!-- <iframe src="https://www.youtube.com/embed/E9fnjheb4Ic?mute=1&loop=1&playlist=E9fnjheb4Ic" allowfullscreen class="project-vid"></iframe> -->
-                                        <!-- <iframe src="https://www.youtube.com/embed/y7WJdZAOe-s?mute=1&loop=1&playlist=y7WJdZAOe-s" allowfullscreen class="project-vid"></iframe> -->
-                                        <iframe src="https://www.youtube.com/embed/FtkiL4OcDG0?mute=1&loop=1&playlist=FtkiL4OcDG0" allowfullscreen class="project-vid"></iframe>
-                                        <iframe src="https://www.youtube.com/embed/UOpQotfJyWY?mute=1&loop=1&playlist=UOpQotfJyWY" allowfullscreen class="project-vid"></iframe>
-                                        <!-- <iframe src="https://www.youtube.com/embed/T1IM9_0B8SM?mute=1&loop=1&playlist=T1IM9_0B8SM" allowfullscreen class="project-vid"></iframe> -->
-                                        <!-- <iframe src="https://www.youtube.com/embed/4jO3qv54S0w?mute=1&loop=1&playlist=4jO3qv54S0w" allowfullscreen class="project-vid"></iframe> -->
-                                        <iframe src="https://www.youtube.com/embed/zRQ4qNfhPOM?mute=1&loop=1&playlist=zRQ4qNfhPOM" allowfullscreen class="project-vid"></iframe>
-                                        <!-- <iframe src="https://www.youtube.com/embed/JBNA-rTC9DM?mute=1&loop=1&playlist=JBNA-rTC9DM" allowfullscreen class="project-vid"></iframe> -->
+                                        <div data-yt="muE892nOdNQ"></div>
+                                        <div data-yt="W183m3C043Q"></div>
+                                        <!-- <div data-yt="KELYhz2GEZk"></div> -->
+                                        <div data-yt="OOs80iDnQzc"></div>
+                                        <!-- <div data-yt="0zLzCLcaCbk"></div> -->
+                                        <!-- <div data-yt="E9fnjheb4Ic"></div> -->
+                                        <!-- <div data-yt="y7WJdZAOe-s"></div> -->
+                                        <div data-yt="FtkiL4OcDG0"></div>
+                                        <div data-yt="UOpQotfJyWY"></div>
+                                        <!-- <div data-yt="T1IM9_0B8SM"></div> -->
+                                        <!-- <div data-yt="4jO3qv54S0w"></div> -->
+                                        <div data-yt="zRQ4qNfhPOM"></div>
+                                        <!-- <div data-yt="JBNA-rTC9DM"></div> -->
 
                                     </div>
                                 </div>
@@ -596,12 +571,12 @@
                                     <p class="project-body">Snow Simulation, Hair Simulation, Liquid Simulation, Particle Simulation</p>
                                     <div id="houdiniContent" class="project-grid hidden">
                                         <!-- Add Houdini videos here -->
-                                        <!-- <iframe src="https://www.youtube.com/embed/gZi-fGJ7L_Y?mute=1&loop=1&playlist=gZi-fGJ7L_Y" allowfullscreen class="project-vid"></iframe> -->
-                                        <!-- <iframe src="https://www.youtube.com/embed/lQrGj07OicI?mute=1&loop=1&playlist=lQrGj07OicI" allowfullscreen class="project-vid"></iframe> -->
-                                        <iframe src="https://www.youtube.com/embed/2uWCk0jf84A?mute=1&loop=1&playlist=2uWCk0jf84A" allowfullscreen class="project-vid"></iframe>
-                                        <iframe src="https://www.youtube.com/embed/SblHy06BpJw?mute=1&loop=1&playlist=SblHy06BpJw" allowfullscreen class="project-vid"></iframe>
-                                        <iframe src="https://www.youtube.com/embed/7gRBg_vtdJg?mute=1&loop=1&playlist=7gRBg_vtdJg" allowfullscreen class="project-vid"></iframe>
-                                        <iframe src="https://www.youtube.com/embed/46d91HfkuKo?mute=1&loop=1&playlist=46d91HfkuKo" allowfullscreen class="project-vid"></iframe>
+                                        <!-- <div data-yt="gZi-fGJ7L_Y"></div> -->
+                                        <!-- <div data-yt="lQrGj07OicI"></div> -->
+                                        <div data-yt="2uWCk0jf84A"></div>
+                                        <div data-yt="SblHy06BpJw"></div>
+                                        <div data-yt="7gRBg_vtdJg"></div>
+                                        <div data-yt="46d91HfkuKo"></div>
 
                                     </div>
                                 </div>
@@ -621,19 +596,19 @@
                                     <p class="project-body">Color Grading, Sound & Visual Effects, Transitions, UI & UX</p>
                                     <div id="davinciContent" class="project-grid hidden">
                                         <!-- Add DaVinci Resolve videos here -->
-                                        <iframe src="https://www.youtube.com/embed/JKA4NWV8Zic?mute=1&loop=1&playlist=JKA4NWV8Zic" allowfullscreen class="project-vid"></iframe>
-                                        <!-- <iframe src="https://www.youtube.com/embed/gZi-fGJ7L_Y?mute=1&loop=1&playlist=gZi-fGJ7L_Y" allowfullscreen class="project-vid"></iframe> -->
-                                        <!-- <iframe src="https://www.youtube.com/embed/j266zyLyGPI?mute=1&loop=1&playlist=j266zyLyGPI" allowfullscreen class="project-vid"></iframe> -->
-                                        <iframe src="https://www.youtube.com/embed/TVGEkbnpCgg?mute=1&loop=1&playlist=TVGEkbnpCgg" allowfullscreen class="project-vid"></iframe>
-                                        <iframe src="https://www.youtube.com/embed/3CBXSn8UWtg?mute=1&loop=1&playlist=3CBXSn8UWtg" allowfullscreen class="project-vid"></iframe>
-                                        <iframe src="https://www.youtube.com/embed/YDcOXn-OAms?mute=1&loop=1&playlist=YDcOXn-OAms" allowfullscreen class="project-vid"></iframe>
-                                        <!-- <iframe src="https://www.youtube.com/embed/lbkPxIOIWiA?mute=1&loop=1&playlist=lbkPxIOIWiA" allowfullscreen class="project-vid"></iframe> -->
-                                        <iframe src="https://www.youtube.com/embed/UZ775JU0Zsg?mute=1&loop=1&playlist=UZ775JU0Zsg" allowfullscreen class="project-vid"></iframe>
-                                        <!-- <iframe src="https://www.youtube.com/embed/bNCT-kjvIWo?mute=1&loop=1&playlist=bNCT-kjvIWo" allowfullscreen class="project-vid"></iframe> -->
-                                        <!-- <iframe src="https://www.youtube.com/embed/KcLG6qsOH6U?mute=1&loop=1&playlist=KcLG6qsOH6U" allowfullscreen class="project-vid"></iframe> -->
-                                        <iframe src="https://www.youtube.com/embed/Kgx75zXILkY?mute=1&loop=1&playlist=Kgx75zXILkY" allowfullscreen class="project-vid"></iframe>
-                                        <!-- <iframe src="https://www.youtube.com/embed/HzrEeB4iczc?mute=1&loop=1&playlist=HzrEeB4iczc" allowfullscreen class="project-vid"></iframe> -->
-                                        <!-- <iframe src="https://www.youtube.com/embed/EOq2pRc0loI?mute=1&loop=1&playlist=EOq2pRc0loI" allowfullscreen class="project-vid"></iframe> -->
+                                        <div data-yt="JKA4NWV8Zic"></div>
+                                        <!-- <div data-yt="gZi-fGJ7L_Y"></div> -->
+                                        <!-- <div data-yt="j266zyLyGPI"></div> -->
+                                        <div data-yt="TVGEkbnpCgg"></div>
+                                        <div data-yt="3CBXSn8UWtg"></div>
+                                        <div data-yt="YDcOXn-OAms"></div>
+                                        <!-- <div data-yt="lbkPxIOIWiA"></div> -->
+                                        <div data-yt="UZ775JU0Zsg"></div>
+                                        <!-- <div data-yt="bNCT-kjvIWo"></div> -->
+                                        <!-- <div data-yt="KcLG6qsOH6U"></div> -->
+                                        <div data-yt="Kgx75zXILkY"></div>
+                                        <!-- <div data-yt="HzrEeB4iczc"></div> -->
+                                        <!-- <div data-yt="EOq2pRc0loI"></div> -->
 
                                     </div>
                                 </div>
@@ -653,10 +628,10 @@
                                     <p class="project-body">Rigid Body Simulation, Soft body Simulation, Cloth Simulation</p>
                                     <div id="omniverseContent" class="project-grid hidden">
                                         <!-- Add Omniverse videos here -->
-                                        <iframe src="https://www.youtube.com/embed/dvklmad-t8g?mute=1&loop=1&playlist=dvklmad-t8g" allowfullscreen class="project-vid"></iframe>
-                                        <iframe src="https://www.youtube.com/embed/4DEaV99HNsA?mute=1&loop=1&playlist=4DEaV99HNsA" allowfullscreen class="project-vid"></iframe>
-                                        <iframe src="https://www.youtube.com/embed/lKV7YIZq5bc?mute=1&loop=1&playlist=lKV7YIZq5bc" allowfullscreen class="project-vid"></iframe>
-                                        <iframe src="https://www.youtube.com/embed/8EFe1p2Jed4?mute=1&loop=1&playlist=8EFe1p2Jed4" allowfullscreen class="project-vid"></iframe>
+                                        <div data-yt="dvklmad-t8g"></div>
+                                        <div data-yt="4DEaV99HNsA"></div>
+                                        <div data-yt="lKV7YIZq5bc"></div>
+                                        <div data-yt="8EFe1p2Jed4"></div>
 
                                     </div>
                                 </div>
@@ -676,10 +651,10 @@
                                     <p class="project-body">C++ Vulkan Renderer, Cascaduer, Godot, TouchDesigner</p>
                                     <div id="miscellaneousContent" class="project-grid hidden">
                                         <!-- Add Miscellaneous videos here -->
-                                        <iframe src="https://www.youtube.com/embed/DPhJNrsgkp8?mute=1&loop=1" allowfullscreen class="project-vid"></iframe>
-                                        <iframe src="https://www.youtube.com/embed/OP48_ufv6m4?mute=1&loop=1&playlist=OP48_ufv6m4" allowfullscreen class="project-vid"></iframe>
-                                        <iframe src="https://www.youtube.com/embed/hdMk9SbbnIg?mute=1&loop=1&playlist=hdMk9SbbnIg" allowfullscreen class="project-vid"></iframe>
-                                        <iframe src="https://www.youtube.com/embed/bkjSfoZjqyE?mute=1&loop=1&playlist=bkjSfoZjqyE" allowfullscreen class="project-vid"></iframe>
+                                        <div data-yt="DPhJNrsgkp8"></div>
+                                        <div data-yt="OP48_ufv6m4"></div>
+                                        <div data-yt="hdMk9SbbnIg"></div>
+                                        <div data-yt="bkjSfoZjqyE"></div>
                                     </div>
                                 </div>
                             </div>
