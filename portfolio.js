@@ -104,9 +104,11 @@ function toggleDropdown(id, open)
 {
 	const hidden = document.getElementById(`${id}Content`)?.classList.toggle("hidden", open === undefined ? undefined : !open);
 
+	document.querySelector(`#${id}Section > button`)?.setAttribute("aria-expanded", String(hidden === false));
+
 	if (hidden === false)
 	{
-		document.getElementById(`${id}Section`)?.scrollIntoView(); // <html> has scroll-smooth
+		document.getElementById(`${id}Section`)?.scrollIntoView(); // follows the CSS scroll-behavior
 		history.replaceState(null, "", `#${id}Section`);
 	}
 }
