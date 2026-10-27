@@ -1,5 +1,77 @@
 @import "tailwindcss";
 
+@font-face
+{
+	font-family: "JetBrains Mono";
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: url("./Fonts/JetBrainsMono-Regular.woff2") format("woff2");
+}
+
+@font-face
+{
+	font-family: "JetBrains Mono";
+	font-style: normal;
+	font-weight: 600;
+	font-display: swap;
+	src: url("./Fonts/JetBrainsMono-SemiBold.woff2") format("woff2");
+}
+
+@font-face
+{
+	font-family: "JetBrains Mono";
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: url("./Fonts/JetBrainsMono-Bold.woff2") format("woff2");
+}
+
+@font-face
+{
+	font-family: "JetBrains Mono";
+	font-style: normal;
+	font-weight: 800;
+	font-display: swap;
+	src: url("./Fonts/JetBrainsMono-ExtraBold.woff2") format("woff2");
+}
+
+@font-face
+{
+	font-family: "JetBrains Mono";
+	font-style: italic;
+	font-weight: 400;
+	font-display: swap;
+	src: url("./Fonts/JetBrainsMono-Italic.woff2") format("woff2");
+}
+
+@font-face
+{
+	font-family: "JetBrains Mono";
+	font-style: italic;
+	font-weight: 600;
+	font-display: swap;
+	src: url("./Fonts/JetBrainsMono-SemiBoldItalic.woff2") format("woff2");
+}
+
+@font-face
+{
+	font-family: "JetBrains Mono";
+	font-style: italic;
+	font-weight: 700;
+	font-display: swap;
+	src: url("./Fonts/JetBrainsMono-BoldItalic.woff2") format("woff2");
+}
+
+@font-face
+{
+	font-family: "JetBrains Mono";
+	font-style: italic;
+	font-weight: 800;
+	font-display: swap;
+	src: url("./Fonts/JetBrainsMono-ExtraBoldItalic.woff2") format("woff2");
+}
+
 @theme {
 	--color-base: #d8e2fd;
 	--color-page: #8a97b6;
@@ -10,7 +82,8 @@
 	--color-icon: #8ed0fa;
 	--color-icon-hover: #ea580c;
 	--color-end-hover: #ff0000;
-	--font-jetbrains: JetbrainsMonoNerdFont, monospace;
+	--font-jetbrains: "JetBrains Mono", monospace;
+	--font-jetbrains--font-feature-settings: "zero";
 }
 
 @layer components {
